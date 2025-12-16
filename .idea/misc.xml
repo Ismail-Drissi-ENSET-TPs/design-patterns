@@ -7,10 +7,12 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../decorator/pom.xml" />
         <option value="$PROJECT_DIR$/proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/template-method/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/template-method/README.md/pom.xml" />
         <option value="$PROJECT_DIR$/testing/pom.xml" />
       </set>
     </option>
