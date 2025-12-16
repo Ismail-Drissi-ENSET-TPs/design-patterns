@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/proxy/pom.xml" />
         <option value="$PROJECT_DIR$/template-method/pom.xml" />
         <option value="$PROJECT_DIR$/adapter-monitor/pom.xml" />
+        <option value="$PROJECT_DIR$/decorator/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
