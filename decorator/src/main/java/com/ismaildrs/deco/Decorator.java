@@ -1,6 +1,6 @@
-package com.ismail.deco;
+package com.ismaildrs.deco;
 
-import com.ismail.boisson.Boisson;
+import com.ismaildrs.boisson.Boisson;
 
 public abstract class Decorator extends Boisson {
 

@@ -10,10 +10,12 @@
         <option value="$PROJECT_DIR$/template-method/pom.xml" />
         <option value="$PROJECT_DIR$/adapter-monitor/pom.xml" />
         <option value="$PROJECT_DIR$/decorator/pom.xml" />
+        <option value="$PROJECT_DIR$/decorator-javafx/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/decorator/pom.xml" />
         <option value="$PROJECT_DIR$/template-method/README.md/pom.xml" />
         <option value="$PROJECT_DIR$/testing/pom.xml" />
       </set>

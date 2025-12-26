@@ -1,4 +1,4 @@
-package com.ismail.boisson;
+package com.ismaildrs.boisson;
 
 public class Dera extends Boisson{
 

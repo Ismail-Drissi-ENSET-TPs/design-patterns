@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.ismaildrs.controllers.MainController"
+      alignment="CENTER"
+      style="-fx-background-color: linear-gradient(to bottom right, #eef2f3, #d9e2ec);"
+      prefWidth="420"
+      prefHeight="380">
+
+    <!-- Card -->
+    <VBox spacing="18"
+          alignment="CENTER"
+          style="-fx-background-color: white;
+                 -fx-background-radius: 14;
+                 -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0.3, 0, 5);"
+          prefWidth="340">
+
+        <padding>
+            <Insets top="25" right="25" bottom="25" left="25"/>
+        </padding>
+
+        <!-- Header -->
+        <Label text="Boisson Personnalisée"
+               style="-fx-font-size: 20px;
+                      -fx-font-weight: bold;
+                      -fx-text-fill: #2c3e50;"/>
+
+        <Separator/>
+
+        <!-- Beverage choice -->
+        <VBox spacing="6" alignment="CENTER_LEFT">
+            <Label text="Choisir une boisson"
+                   style="-fx-text-fill: #555; -fx-font-size: 13px;"/>
+            <ChoiceBox fx:id="choiceBoisson"
+                       prefWidth="260"
+                       style="-fx-font-size: 14px;"/>
+        </VBox>
+
+        <!-- Options -->
+        <VBox spacing="8" alignment="CENTER_LEFT">
+            <Label text="Options"
+                   style="-fx-text-fill: #555; -fx-font-size: 13px;"/>
+            <CheckBox fx:id="checkSucre" text="Sucre"/>
+            <CheckBox fx:id="checkChocolat" text="Chocolat"/>
+        </VBox>
+
+        <!-- Button -->
+        <Button fx:id="btnCalculer"
+                text="Calculer le prix"
+                prefWidth="260"
+                style="
+                    -fx-background-radius: 8;
+                    -fx-background-color: #4CAF50;
+                    -fx-text-fill: white;
+                    -fx-font-size: 14px;
+                    -fx-font-weight: bold;
+                "/>
+
+        <!-- Result -->
+        <Label fx:id="lblResult"
+               text="Prix total : —"
+               style="-fx-font-size: 15px;
+                      -fx-text-fill: #34495e;
+                      -fx-font-weight: bold;"/>
+
+    </VBox>
+</VBox>
