@@ -1,17 +1,19 @@
 package com.ismaildrs.testing;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    static void main() {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        IO.println(String.format("Hello and welcome!"));
+    public static void main(String[] args) {
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            IO.println("i = " + i);
-        }
+        Composant root = new Composite("Composite 1");
+        Composant composite2 = new Composite("Composite 2");
+
+        ((Composite) root).add(composite2);
+        ((Composite) root).add(new Element("Element 11"));
+        ((Composite) root).add(new Element("Element 12"));
+        ((Composite) root).add(new Element("Element 13"));
+
+        ((Composite) composite2).add(new Element("Element 21"));
+        ((Composite) composite2).add(new Element("Element 22"));
+
+        root.operation();
     }
 }
